@@ -43,7 +43,7 @@ class _LoginState extends State<LoginPassword> {
                       Opacity(
                         opacity: 0,
                         child: Text(
-                          "忘记密码?",
+                          "Forgot password",
                           style: TextStyle(
                             color: WcaoTheme.placeholder,
                             fontSize: 12,
@@ -58,7 +58,7 @@ class _LoginState extends State<LoginPassword> {
                         child: Container(
                           alignment: Alignment.center,
                           child: Text(
-                            "免密登录",
+                            "Password-free login",
                             style: TextStyle(
                               color: WcaoTheme.primaryFocus,
                               fontWeight: FontWeight.w500,
@@ -71,7 +71,7 @@ class _LoginState extends State<LoginPassword> {
                           Get.toNamed('/verify-code/reset_password');
                         },
                         child: Text(
-                          "忘记密码?",
+                          "Forgot password?",
                           style: TextStyle(
                             color: WcaoTheme.secondary,
                             fontSize: 12,
@@ -87,15 +87,15 @@ class _LoginState extends State<LoginPassword> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "登录即同意",
+                        "Sign in to agree",
                         style: TextStyle(color: WcaoTheme.placeholder),
                       ),
-                      InkWell(child: const Text('《用户协议》'), onTap: () {}),
+                      InkWell(child: const Text('"User Aggrement"'), onTap: () {}),
                       Text(
-                        "及",
+                        "and",
                         style: TextStyle(color: WcaoTheme.placeholder),
                       ),
-                      InkWell(child: const Text('《隐私政策》'), onTap: () {}),
+                      InkWell(child: const Text('"Privacy Policy"'), onTap: () {}),
                     ],
                   ),
                 ),
@@ -117,7 +117,7 @@ class _LoginState extends State<LoginPassword> {
           child: Wrap(
             children: [
               Text(
-                '密码',
+                'Password',
                 style: TextStyle(
                   fontSize: 14,
                   color: WcaoTheme.placeholder,
@@ -136,7 +136,7 @@ class _LoginState extends State<LoginPassword> {
             enableSuggestions: false,
             autocorrect: false,
             decoration: InputDecoration(
-              hintText: "请输入密码",
+              hintText: "Please enter password",
               contentPadding:
                   const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
               enabledBorder: OutlineInputBorder(
@@ -177,7 +177,7 @@ class _LoginState extends State<LoginPassword> {
           borderRadius: WcaoTheme.radius,
         ),
         child: const Text(
-          '登录',
+          'Log in',
           style: TextStyle(
               fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white),
         ),

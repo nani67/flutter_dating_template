@@ -16,7 +16,7 @@ class _SettingsNotificationState extends State<SettingsNotification> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('消息通知'),
+        title: const Text('Notification'),
       ),
       body: SafeArea(
         child: Container(
@@ -24,7 +24,7 @@ class _SettingsNotificationState extends State<SettingsNotification> {
           child: Column(
             children: [
               Cell(
-                '允许新消息通知',
+                'Allow new message notification',
                 right: Transform.scale(
                   scale: .8,
                   child: CupertinoSwitch(
@@ -34,7 +34,7 @@ class _SettingsNotificationState extends State<SettingsNotification> {
                 ),
               ),
               Cell(
-                '声音提示',
+                'Sound Prompt',
                 right: Transform.scale(
                   scale: .8,
                   child: CupertinoSwitch(
@@ -44,7 +44,7 @@ class _SettingsNotificationState extends State<SettingsNotification> {
                 ),
               ),
               Cell(
-                '震动提示',
+                'Vibration Reminder',
                 right: Transform.scale(
                   scale: .8,
                   child: CupertinoSwitch(

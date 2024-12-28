@@ -26,7 +26,7 @@ class _MineFirendsState extends State<MineFirends> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('好友'),
+        title: const Text('Friends'),
       ),
       body: SafeArea(
         child: ListView(
@@ -69,7 +69,7 @@ Container listCard(MockLike item) {
                     Container(
                       margin: const EdgeInsets.only(top: 4),
                       child: Text(
-                        '${mock.integer(min: 1, max: 99)}天 | ${mock.integer(min: 1, max: 99)}动态',
+                        '${mock.integer(min: 1, max: 99)} Sky | ${mock.integer(min: 1, max: 99)} dynamic',
                         style: TextStyle(
                           color: WcaoTheme.secondary,
                           fontSize: WcaoTheme.fsBase,
@@ -87,7 +87,7 @@ Container listCard(MockLike item) {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     child: Text(
-                      '已关注',
+                      'Already following',
                       style: TextStyle(
                           fontSize: WcaoTheme.fsSm, color: Colors.white),
                     ),

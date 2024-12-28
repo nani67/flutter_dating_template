@@ -17,11 +17,11 @@ class _PublishState extends State<Publish> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('发布动态'),
+        title: const Text('Post updates'),
         actions: [
           TextButton(
             onPressed: () {},
-            child: const Text('发布'),
+            child: const Text('Release'),
           ),
         ],
       ),
@@ -34,7 +34,7 @@ class _PublishState extends State<Publish> {
                 padding: const EdgeInsets.symmetric(horizontal: 12),
                 child: const TextField(
                   decoration: InputDecoration(
-                    hintText: '说出你的故事',
+                    hintText: 'Tell your story',
                     border: InputBorder.none,
                   ),
                   maxLines: null,
@@ -92,7 +92,7 @@ class _PublishState extends State<Publish> {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Text(
-                          '#话题',
+                          '#topic',
                           style: TextStyle(color: WcaoTheme.secondary),
                         ),
                       ),
@@ -165,7 +165,7 @@ class _PublishState extends State<Publish> {
               ),
               alignment: Alignment.center,
               child: const Text(
-                '删除',
+                'Delete',
                 style: TextStyle(color: Colors.white),
               ),
             ),

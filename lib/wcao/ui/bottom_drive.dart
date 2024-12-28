@@ -20,7 +20,7 @@ class BottomDrive extends StatelessWidget {
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 12),
             child:
-                Text('我是有底线的', style: TextStyle(color: WcaoTheme.placeholder)),
+                Text('I have a bottom line', style: TextStyle(color: WcaoTheme.placeholder)),
           ),
           Expanded(
               child: Container(

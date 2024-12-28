@@ -11,21 +11,20 @@ class SearchDialog extends StatefulWidget {
 
 class _SearchDialogState extends State<SearchDialog> {
   double age = 18;
-  List<String> sex = ['男', '女', '不限'];
-  List<String> edu = ["小学", "初中", "高中", "大学"];
-  List<String> constellation = [
-    "白羊",
-    "金牛",
-    "双子",
-    "巨蟹",
-    "狮子",
-    "处女",
-    "天秤",
-    "天蝎",
-    "射手",
-    "摩羯",
-    "水瓶",
-    "双鱼",
+  List<String> sex = ["Male","Female","Other"];
+  List<String> edu = ["Elementary school", "Junior high school", "High school", "University"];
+  List<String> constellation = ["Aries",
+          "Taurus",
+          "Gemini",
+          "Cancer",
+          "Leo",
+          "Virgo",
+          "Libra",
+          "Scorpio",
+          "Sagittarius",
+          "Capricorn",
+          "Aquarius",
+          "Pisces",
   ];
 
   @override
@@ -56,7 +55,7 @@ class _SearchDialogState extends State<SearchDialog> {
         children: [
           SizedBox(
             child: Text(
-              '基础条件',
+              'Basic Conditions',
               style: TextStyle(color: WcaoTheme.secondary),
             ),
           ),
@@ -64,7 +63,7 @@ class _SearchDialogState extends State<SearchDialog> {
           Container(
             margin: const EdgeInsets.only(top: 24),
             child: Text(
-              '其他条件',
+              'Other Conditions',
               style: TextStyle(color: WcaoTheme.secondary),
             ),
           ),
@@ -84,7 +83,7 @@ class _SearchDialogState extends State<SearchDialog> {
         Container(
           margin: const EdgeInsets.only(top: 24),
           child: Text(
-            '星座',
+            'Constellation',
             style: TextStyle(fontSize: WcaoTheme.fsL),
           ),
         ),
@@ -108,7 +107,7 @@ class _SearchDialogState extends State<SearchDialog> {
         Container(
           margin: const EdgeInsets.only(top: 24),
           child: Text(
-            '学历',
+            'Educational Qualifications',
             style: TextStyle(fontSize: WcaoTheme.fsL),
           ),
         ),
@@ -131,7 +130,7 @@ class _SearchDialogState extends State<SearchDialog> {
         Container(
           margin: const EdgeInsets.only(top: 24),
           child: Text(
-            '性别',
+            'Gender',
             style: TextStyle(fontSize: WcaoTheme.fsL),
           ),
         ),
@@ -179,7 +178,7 @@ class _SearchDialogState extends State<SearchDialog> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                '年龄',
+                'Age',
                 style: TextStyle(
                   fontSize: WcaoTheme.fsL,
                 ),
@@ -221,7 +220,7 @@ class _SearchDialogState extends State<SearchDialog> {
         onPressed: () => Navigator.pop(context),
       ),
       title: Text(
-        '筛选条件',
+        'Filter criteria',
         style: TextStyle(
           fontSize: WcaoTheme.fsXl,
           fontWeight: FontWeight.bold,
@@ -234,7 +233,7 @@ class _SearchDialogState extends State<SearchDialog> {
             Navigator.pop(context);
           },
           child: Text(
-            '确定',
+            'Sure',
             style: TextStyle(
               color: WcaoTheme.primary,
             ),

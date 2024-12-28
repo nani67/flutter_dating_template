@@ -37,6 +37,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: '社区交友APP',
       theme: ThemeData(
         appBarTheme: AppBarTheme(
@@ -54,9 +55,8 @@ class _MyAppState extends State<MyApp> {
           ),
         ),
         primaryColor: WcaoTheme.primary,
-        backgroundColor: Colors.transparent,
         textTheme: TextTheme(
-          bodyText1: TextStyle(fontSize: WcaoTheme.fsBase),
+          bodyLarge: TextStyle(fontSize: WcaoTheme.fsBase),
         ),
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
@@ -80,7 +80,8 @@ class _MyAppState extends State<MyApp> {
           thumbColor: WcaoTheme.primary,
           valueIndicatorColor: WcaoTheme.primary,
           inactiveTickMarkColor: WcaoTheme.primary,
-        ),
+        ), 
+        //colorScheme: ColorScheme(surface: Colors.transparent),
       ),
       getPages: getRoutes,
       initialRoute: '/home',

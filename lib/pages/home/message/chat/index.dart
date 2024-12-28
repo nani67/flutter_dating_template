@@ -18,7 +18,7 @@ class _MessageChatState extends State<MessageChat> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('好友名称'),
+        title: const Text('Friend Name'),
         actions: [
           IconButton(
             onPressed: () {
@@ -34,14 +34,14 @@ class _MessageChatState extends State<MessageChat> {
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            child: const Text("拉黑"),
+                            child: const Text("Block"),
                           ),
                           CupertinoActionSheetAction(
                             onPressed: () {
                               Navigator.pop(context);
                             },
                             child: const Text(
-                              "举报",
+                              "Report",
                               style: TextStyle(color: Colors.redAccent),
                             ),
                           ),
@@ -54,7 +54,7 @@ class _MessageChatState extends State<MessageChat> {
                               Navigator.pop(context);
                             },
                             child: Text(
-                              "取消",
+                              "Cancel",
                               style: TextStyle(color: WcaoTheme.placeholder),
                             ),
                           )
@@ -76,7 +76,7 @@ class _MessageChatState extends State<MessageChat> {
           enableSuggestions: false,
           autocorrect: false,
           decoration: InputDecoration(
-            hintText: "发送消息...",
+            hintText: "Send message...",
             contentPadding: EdgeInsets.symmetric(
               vertical: 0,
               horizontal: 16,
@@ -117,7 +117,7 @@ class _MessageChatState extends State<MessageChat> {
               ? const EdgeInsets.only(right: 12)
               : const EdgeInsets.only(left: 12),
           child: Text(
-            mock.cparagraph(min: 1, max: 3),
+            mock.paragraph(min: 1, max: 3),
             style: const TextStyle(color: Colors.white),
           ),
         ),

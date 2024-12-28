@@ -30,7 +30,7 @@ class _NewPasswordState extends State<PasswordReset> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '设置新密码',
+                'Set new password',
                 style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.w500,
@@ -40,7 +40,7 @@ class _NewPasswordState extends State<PasswordReset> {
               Container(
                 margin: const EdgeInsets.only(top: 12),
                 child: Text(
-                  '密码至少8位，包含数字/字母/字符组合',
+                  'The password must be at least 8 characters and contain a combination of numbers/letters/characters',
                   style: TextStyle(color: WcaoTheme.secondary),
                 ),
               ),
@@ -53,7 +53,7 @@ class _NewPasswordState extends State<PasswordReset> {
                   enableSuggestions: false,
                   autocorrect: false,
                   decoration: InputDecoration(
-                    hintText: "请输入新密码",
+                    hintText: "Please enter new password",
                     contentPadding:
                         const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
                     enabledBorder: OutlineInputBorder(
@@ -75,7 +75,7 @@ class _NewPasswordState extends State<PasswordReset> {
               ),
               InkWell(
                 onTap: () async {
-                  await WcaoUtils.toast('密码重置成功！');
+                  await WcaoUtils.toast('Password reset successful!');
                   Get.offAllNamed('/login/password');
                 },
                 child: Container(
@@ -88,7 +88,7 @@ class _NewPasswordState extends State<PasswordReset> {
                   ),
                   alignment: Alignment.center,
                   child: const Text(
-                    '确认',
+                    'Confirm',
                     style: TextStyle(color: Colors.white, fontSize: 16),
                   ),
                 ),

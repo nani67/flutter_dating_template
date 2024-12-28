@@ -14,7 +14,7 @@ class _SettingsAboutState extends State<SettingsAbout> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('关于我们'),
+        title: const Text('About us'),
       ),
       body: SafeArea(
         child: Container(
@@ -40,7 +40,7 @@ class _SettingsAboutState extends State<SettingsAbout> {
                   Container(
                     margin: const EdgeInsets.only(top: 12),
                     child: Text(
-                      '爱交友',
+                      'Dating',
                       style: TextStyle(
                         fontSize: WcaoTheme.fsBase * 1.75,
                         fontWeight: FontWeight.bold,
@@ -64,7 +64,7 @@ class _SettingsAboutState extends State<SettingsAbout> {
                   InkWell(
                     onTap: () => Get.toNamed('/agreement/privacy'),
                     child: Text(
-                      '隐私政策',
+                      'Privacy Policy',
                       style: TextStyle(
                         color: WcaoTheme.secondary,
                       ),
@@ -79,7 +79,7 @@ class _SettingsAboutState extends State<SettingsAbout> {
                   InkWell(
                     onTap: () => Get.toNamed('/agreement/user'),
                     child: Text(
-                      '用户协议',
+                      'User Aggrement',
                       style: TextStyle(
                         color: WcaoTheme.secondary,
                       ),

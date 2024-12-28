@@ -19,9 +19,9 @@ class _PageViewCommunityState extends State<PageViewCommunity>
   int curPage = 0;
 
   final List<Tab> _tabs = const [
-    Tab(text: "关注"),
-    Tab(text: "推荐"),
-    Tab(text: "发现"),
+    Tab(text: "Focus"),
+    Tab(text: "Recommend"),
+    Tab(text: "Discover"),
   ];
 
   late PageController _pageController;

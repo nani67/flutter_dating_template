@@ -16,15 +16,15 @@ class _SettingsAccountState extends State<SettingsAccount> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('账号设置'),
+        title: const Text('Account settings'),
       ),
       body: SafeArea(
         child: Column(
           children: [
-            Cell('修改密码', onTap: () => Get.toNamed('/password/update')),
-            Cell('更换绑定手机号',
+            Cell('Change Password', onTap: () => Get.toNamed('/password/update')),
+            Cell('Change Mobile number',
                 onTap: () => Get.toNamed('/settings/account/update-phone')),
-            Cell('注销账号', onTap: () => Get.toNamed('/settings/account/logout')),
+            Cell('Log out', onTap: () => Get.toNamed('/settings/account/logout')),
           ],
         ),
       ),

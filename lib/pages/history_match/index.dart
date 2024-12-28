@@ -62,7 +62,7 @@ class _HistoryMatchState extends State<HistoryMatch> {
           onTap: () => Get.back(),
           child: const Icon(Icons.arrow_back_ios),
         ),
-        title: const Text('历史匹配'),
+        title: const Text('History matching'),
       ),
       body: SmartRefresher(
         enablePullDown: true,

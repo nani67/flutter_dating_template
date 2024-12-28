@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_dating_template/wcao/ui/theme.dart';
 
-const assetHost = 'https://rao.pics/r';
+const assetHost = 'https://picsum.photos';
 
 class WcaoUtils {
   /// toast
@@ -25,20 +25,22 @@ class WcaoUtils {
   /// https://pub.flutter-io.cn/packages/cached_network_image
   /// 缓存图片
   static Widget imageCache(String url, {BoxFit? fit}) {
-    return CachedNetworkImage(
-      imageUrl: url,
-      fit: fit ?? BoxFit.fill,
-      placeholder: (context, url) => CupertinoActivityIndicator(
-        color: WcaoTheme.primary,
-      ),
-      errorWidget: (context, url, error) => const Icon(
-        Icons.error,
-        color: Colors.redAccent,
-      ),
-    );
+
+    return Image.network(url);
+    // return CachedNetworkImage(
+    //   imageUrl: url,
+    //   fit: fit ?? BoxFit.fill,
+    //   placeholder: (context, url) => CupertinoActivityIndicator(
+    //     color: WcaoTheme.primary,
+    //   ),
+    //   errorWidget: (context, url, error) => const Icon(
+    //     Icons.error,
+    //     color: Colors.redAccent,
+    //   ),
+    // );
   }
 
   static String getRandomImage() {
-    return '$assetHost?t=${DateTime.now()}';
+    return '$assetHost/800/1000';
   }
 }

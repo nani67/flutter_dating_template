@@ -80,7 +80,7 @@ class _PageViewRecommendState extends State<PageViewRecommend> {
                 )),
                 Container(
                   margin: const EdgeInsets.symmetric(horizontal: 12),
-                  child: Text('我是有底线的',
+                  child: Text('I have a bottom line',
                       style: TextStyle(color: WcaoTheme.placeholder)),
                 ),
                 Expanded(

@@ -15,13 +15,13 @@ class _SettingsPrivacyState extends State<SettingsPrivacy> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('隐私'),
+        title: const Text('Privacy'),
       ),
       body: SafeArea(
         child: Column(
           children: [
             Cell(
-              '屏蔽联系人',
+              'Block Contact',
               right: Transform.scale(
                 scale: .8,
                 child: CupertinoSwitch(
@@ -31,7 +31,7 @@ class _SettingsPrivacyState extends State<SettingsPrivacy> {
               ),
             ),
             Cell(
-              '允许他人看到我的关注和被关注',
+              'Allow others to see my following and be followed',
               right: Transform.scale(
                 scale: .8,
                 child: CupertinoSwitch(
@@ -41,7 +41,7 @@ class _SettingsPrivacyState extends State<SettingsPrivacy> {
               ),
             ),
             Cell(
-              '黑名单',
+              'Blacklist',
               onTap: () => Get.toNamed('/settings/backlist'),
             ),
           ],

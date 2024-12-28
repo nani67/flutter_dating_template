@@ -41,7 +41,7 @@ class _LoginState extends State<LoginVerifyCode> {
                     margin: const EdgeInsets.only(top: 16),
                     alignment: Alignment.center,
                     child: Text(
-                      "密码登录",
+                      "Password Login",
                       style: TextStyle(
                         color: WcaoTheme.primaryFocus,
                         fontWeight: FontWeight.w500,
@@ -55,20 +55,20 @@ class _LoginState extends State<LoginVerifyCode> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "登录即同意",
+                        "Sign in to agree",
                         style: TextStyle(color: WcaoTheme.placeholder),
                       ),
                       InkWell(
-                        child: const Text('《用户协议》'),
+                        child: const Text('User Aggrement'),
                         onTap: () =>
                             Navigator.pushNamed(context, "/agreement/user"),
                       ),
                       Text(
-                        "及",
+                        "and",
                         style: TextStyle(color: WcaoTheme.placeholder),
                       ),
                       InkWell(
-                        child: const Text('《隐私政策》'),
+                        child: const Text('Privacy Policy'),
                         onTap: () =>
                             Navigator.pushNamed(context, "/agreement/privacy"),
                       ),
@@ -93,7 +93,7 @@ class _LoginState extends State<LoginVerifyCode> {
           child: Wrap(
             children: [
               Text(
-                '密码',
+                'Password',
                 style: TextStyle(
                   fontSize: 14,
                   color: WcaoTheme.placeholder,
@@ -149,7 +149,7 @@ class _LoginState extends State<LoginVerifyCode> {
           borderRadius: WcaoTheme.radius,
         ),
         child: const Text(
-          '登录',
+          'Login',
           style: TextStyle(
               fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white),
         ),
@@ -167,7 +167,7 @@ class _LoginState extends State<LoginVerifyCode> {
           child: Wrap(
             children: [
               Text(
-                '验证码',
+                'Verification code',
                 style: TextStyle(
                   fontSize: 14,
                   color: WcaoTheme.placeholder,
@@ -188,7 +188,7 @@ class _LoginState extends State<LoginVerifyCode> {
                 maxLength: 6,
                 decoration: InputDecoration(
                   counterText: "",
-                  hintText: "请输入验证码",
+                  hintText: "Please enter the code",
                   contentPadding:
                       const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
                   enabledBorder: OutlineInputBorder(
@@ -218,7 +218,7 @@ class _LoginState extends State<LoginVerifyCode> {
                   alignment: Alignment.center,
                   height: 50,
                   child: Text(
-                    "获取验证码",
+                    "Get Verification code",
                     style: TextStyle(
                       fontSize: 14,
                       color: WcaoTheme.primary,

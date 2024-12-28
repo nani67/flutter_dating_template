@@ -23,11 +23,11 @@ class MockMine {
 
   static MockMine get() {
     return MockMine(
-      nickName: mock.cname(),
+      nickName: mock.name(),
       avatar: WcaoUtils.getRandomImage(),
       createDay: mock.integer(min: 1, max: 99),
       tags: List.generate(mock.integer(min: 1, max: 4),
-          (index) => '#${mock.ctitle(min: 3, max: 10)}'),
+          (index) => '#${mock.title(min: 3, max: 10)}'),
       bg: WcaoUtils.getRandomImage(),
       visits: mock.integer(min: 1, max: 99),
       friends: mock.integer(min: 1, max: 99),

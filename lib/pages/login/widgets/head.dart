@@ -15,7 +15,7 @@ class _HeadState extends State<Head> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          '登录/注册',
+          'Login/Register',
           style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.w500,
@@ -27,7 +27,7 @@ class _HeadState extends State<Head> {
           child: Wrap(
             children: [
               Text(
-                '手机号码',
+                'Phone Number',
                 style: TextStyle(
                   fontSize: 14,
                   color: WcaoTheme.placeholder,
@@ -45,7 +45,7 @@ class _HeadState extends State<Head> {
             maxLength: 11,
             decoration: InputDecoration(
               counterText: "",
-              hintText: "请输入手机号码",
+              hintText: "Please enter your mobile number",
               contentPadding:
                   const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
               enabledBorder: OutlineInputBorder(

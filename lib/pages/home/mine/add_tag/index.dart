@@ -16,12 +16,12 @@ class _MineAddTagState extends State<MineAddTag> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('添加标签'),
+        title: const Text('Add tag'),
         actions: [
           TextButton(
             onPressed: () => Get.back(),
             child: Text(
-              '完成',
+              'Finish',
               style: TextStyle(color: WcaoTheme.base),
             ),
           )
@@ -67,10 +67,10 @@ class _MineAddTagState extends State<MineAddTag> {
                   indicatorColor: WcaoTheme.primary,
                   indicatorPadding: const EdgeInsets.symmetric(horizontal: 24),
                   tabs: const [
-                    Tab(text: '星座'),
-                    Tab(text: '年代'),
-                    Tab(text: '兴趣'),
-                    Tab(text: '特质'),
+                    Tab(text: 'Constellation'),
+                    Tab(text: 'Era'),
+                    Tab(text: 'Interest'),
+                    Tab(text: 'Traits'),
                   ],
                 ),
               ),
@@ -152,7 +152,7 @@ class _MineAddTagState extends State<MineAddTag> {
       children: List.generate(
         5,
         (index) => Tag(
-          '${mock.integer(min: 6, max: 9)}0年代',
+          '${mock.integer(min: 6, max: 9)}0 Era',
           border: Border.all(width: .5, color: WcaoTheme.outline),
           backgroundColor: Colors.white,
           color: WcaoTheme.base,
@@ -171,7 +171,7 @@ class _MineAddTagState extends State<MineAddTag> {
       children: List.generate(
         12,
         (index) => Tag(
-          "${mock.cword(min: 2)}座",
+          "${mock.cword(min: 2)} Seat",
           border: Border.all(width: .5, color: WcaoTheme.outline),
           backgroundColor: Colors.white,
           color: WcaoTheme.base,

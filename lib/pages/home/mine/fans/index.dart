@@ -26,7 +26,7 @@ class _MineFansState extends State<MineFans> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('粉丝'),
+        title: const Text('Fan'),
       ),
       body: SafeArea(
         child: ListView(
@@ -71,7 +71,7 @@ Container listCard(MockLike item) {
                     Container(
                       margin: const EdgeInsets.only(top: 4),
                       child: Text(
-                        '${mock.integer(min: 1, max: 99)}天 | ${mock.integer(min: 1, max: 99)}动态',
+                        '${mock.integer(min: 1, max: 99)} Sky | ${mock.integer(min: 1, max: 99)} Dynamic',
                         style: TextStyle(
                           color: WcaoTheme.secondary,
                           fontSize: WcaoTheme.fsBase,
@@ -89,7 +89,7 @@ Container listCard(MockLike item) {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                     child: Text(
-                      fav ? '已关注' : '关注',
+                      fav ? 'Already following' : 'Focus on',
                       style: TextStyle(
                           fontSize: WcaoTheme.fsSm, color: Colors.white),
                     ),

@@ -37,7 +37,7 @@ class _VerifyCodeState extends State<VerifyCode> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '验证码已发送',
+                'Verification code sent',
                 style: TextStyle(
                   fontSize: WcaoTheme.fsBase * 2,
                   fontWeight: FontWeight.bold,
@@ -58,7 +58,7 @@ class _VerifyCodeState extends State<VerifyCode> {
                   maxLength: 6,
                   decoration: InputDecoration(
                     counterText: "",
-                    hintText: "请输入验证码",
+                    hintText: "Please enter the verification code",
                     contentPadding:
                         const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
                     enabledBorder: OutlineInputBorder(
@@ -96,7 +96,7 @@ class _VerifyCodeState extends State<VerifyCode> {
                     borderRadius: WcaoTheme.radius,
                   ),
                   child: const Text(
-                    '确认',
+                    'Confirm',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w500,

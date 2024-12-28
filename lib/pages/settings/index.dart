@@ -17,7 +17,7 @@ class _SettingsState extends State<Settings> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("设置"),
+        title: const Text("Setup"),
       ),
       body: SafeArea(
         child: Container(
@@ -25,28 +25,28 @@ class _SettingsState extends State<Settings> {
           child: Column(
             children: [
               Cell(
-                '账号安全',
+                'Account security',
                 onTap: () => Get.toNamed('/settings/account'),
               ),
               Cell(
-                '消息通知',
+                'Message notification',
                 onTap: () => Get.toNamed('/settings/notification'),
               ),
               Cell(
-                '隐私设置',
+                'Privacy settings',
                 onTap: () => Get.toNamed('/settings/privacy'),
               ),
               Cell(
-                '清除缓存',
+                'Clear cache',
                 right: Text(
                   '190M',
                   style: TextStyle(fontSize: WcaoTheme.fsL),
                 ),
                 onTap: () => bottomConfirm(context),
               ),
-              Cell('关于我们', onTap: () => Get.toNamed('/settings/about')),
+              Cell('About us', onTap: () => Get.toNamed('/settings/about')),
               Cell(
-                '退出登录',
+                'Log out',
                 border: false,
                 onTap: () => Get.offAndToNamed('/login/verify-code'),
               ),
@@ -76,7 +76,7 @@ class _SettingsState extends State<Settings> {
                 child: Column(
                   children: [
                     Text(
-                      '清除所有缓存记录',
+                      'Clear all cache records',
                       style: TextStyle(
                         color: WcaoTheme.secondary,
                       ),
@@ -97,7 +97,7 @@ class _SettingsState extends State<Settings> {
                           ),
                         ),
                         child: Text(
-                          '清除缓存',
+                          'Clear cache',
                           style: TextStyle(
                             color: Colors.red,
                             fontWeight: FontWeight.bold,
@@ -121,7 +121,7 @@ class _SettingsState extends State<Settings> {
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Text(
-                    '取消',
+                    'Cancel',
                     style: TextStyle(
                       color: Colors.blue,
                       fontWeight: FontWeight.bold,

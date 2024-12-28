@@ -54,26 +54,25 @@ class MockLike extends MockHistoryMatch {
     for (var i = 0; i < num; i++) {
       var mockType = mock.boolean();
       _data.add(MockLike(
-        nickName: mock.cname(),
+        nickName: mock.name(),
         age: mock.integer(min: 18, max: 45),
-        sex: mock.pick(["女", "男", "其他"]),
-        constellation: mock.pick([
-          "白羊座",
-          "金牛座",
-          "双子座",
-          "巨蟹座",
-          "狮子座",
-          "处女座",
-          "天秤座",
-          "天蝎座",
-          "射手座",
-          "摩羯座",
-          "水瓶座",
-          "双鱼座",
+        sex: mock.pick(["Female", "Male", "Others"]),
+        constellation: mock.pick(["Aries",
+          "Taurus",
+          "Gemini",
+          "Cancer",
+          "Leo",
+          "Virgo",
+          "Libra",
+          "Scorpio",
+          "Sagittarius",
+          "Capricorn",
+          "Aquarius",
+          "Pisces",
         ]),
         avatar: WcaoUtils.getRandomImage(),
         tag: List.generate(mock.integer(min: 1, max: 4),
-            (index) => '#${mock.ctitle(min: 3, max: 10)}'),
+            (index) => '#${mock.title(min: 3, max: 10)}'),
         mediaType: mockType,
         media: List.generate(mock.integer(min: 0, max: 4), (index) {
           if (mockType) {
@@ -85,7 +84,7 @@ class MockLike extends MockHistoryMatch {
         share: mock.integer(min: 1, max: 99),
         fav: mock.integer(min: 1, max: 99),
         comment: mock.integer(min: 1, max: 99),
-        text: mock.cparagraph(min: 1, max: 4),
+        text: mock.paragraph(min: 1, max: 4),
         time: mock.dateTime(start: DateTime(2022)).toIso8601String(),
       ));
     }

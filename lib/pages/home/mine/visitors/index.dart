@@ -26,7 +26,7 @@ class _MineVisitorsState extends State<MineVisitors> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('访客'),
+        title: const Text('Visitor'),
       ),
       body: SafeArea(
         child: ListView(
@@ -69,7 +69,7 @@ Container listCard(MockLike item) {
                     Container(
                       margin: const EdgeInsets.only(top: 4),
                       child: Text(
-                        '${mock.integer(min: 1, max: 99)}天 | ${mock.integer(min: 1, max: 99)}动态',
+                        '${mock.integer(min: 1, max: 99)} Sky | ${mock.integer(min: 1, max: 99)} dynamic',
                         style: TextStyle(
                           color: WcaoTheme.secondary,
                           fontSize: WcaoTheme.fsBase,
@@ -79,7 +79,7 @@ Container listCard(MockLike item) {
                   ],
                 ),
                 Text(
-                  '${mock.integer(min: 1, max: 59)}分钟前',
+                  '${mock.integer(min: 1, max: 59)} minutes ago',
                   style: TextStyle(
                     color: WcaoTheme.secondary,
                     fontSize: WcaoTheme.fsBase,

@@ -16,7 +16,7 @@ class _PasswordUpdateState extends State<PasswordUpdate> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("修改密码"),
+          title: const Text("Change password"),
         ),
         body: SafeArea(
           child: Padding(
@@ -29,7 +29,7 @@ class _PasswordUpdateState extends State<PasswordUpdate> {
                   enableSuggestions: false,
                   autocorrect: false,
                   decoration: InputDecoration(
-                    hintText: "请输入原密码",
+                    hintText: "Please enter the original password",
                     contentPadding:
                         const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
                     enabledBorder: OutlineInputBorder(
@@ -56,7 +56,7 @@ class _PasswordUpdateState extends State<PasswordUpdate> {
                     enableSuggestions: false,
                     autocorrect: false,
                     decoration: InputDecoration(
-                      hintText: "请输入新密码",
+                      hintText: "Please enter new password",
                       contentPadding: const EdgeInsets.symmetric(
                           vertical: 0, horizontal: 16),
                       enabledBorder: OutlineInputBorder(
@@ -84,7 +84,7 @@ class _PasswordUpdateState extends State<PasswordUpdate> {
                     enableSuggestions: false,
                     autocorrect: false,
                     decoration: InputDecoration(
-                      hintText: "再次输入密码",
+                      hintText: "Enter password again",
                       contentPadding: const EdgeInsets.symmetric(
                           vertical: 0, horizontal: 16),
                       enabledBorder: OutlineInputBorder(
@@ -110,13 +110,13 @@ class _PasswordUpdateState extends State<PasswordUpdate> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        '密码至少8位，包含数字/字母/字符组合',
+                        'The password must be at least 8 characters and contain a combination of numbers/letters/characters',
                         style: TextStyle(color: WcaoTheme.secondary),
                       ),
                       InkWell(
                         onTap: () => Get.toNamed('/password/forget'),
                         child: Text(
-                          "忘记密码？",
+                          "Forgot password?",
                           style: TextStyle(color: WcaoTheme.primary),
                         ),
                       )
@@ -125,7 +125,7 @@ class _PasswordUpdateState extends State<PasswordUpdate> {
                 ),
                 InkWell(
                   onTap: () async {
-                    await WcaoUtils.toast('密码重置成功');
+                    await WcaoUtils.toast('Password reset successful');
                     TokenController.to.delete();
                     Get.offAllNamed('/login/password');
                   },
@@ -139,7 +139,7 @@ class _PasswordUpdateState extends State<PasswordUpdate> {
                     ),
                     alignment: Alignment.center,
                     child: const Text(
-                      '确认',
+                      'Confirm',
                       style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
                   ),

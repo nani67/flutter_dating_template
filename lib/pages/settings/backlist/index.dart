@@ -14,7 +14,7 @@ class _SettingsBacklistState extends State<SettingsBacklist> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('黑名单'),
+        title: const Text('Blacklist'),
       ),
       body: SafeArea(
         child: ListView.builder(
@@ -51,14 +51,14 @@ class _SettingsBacklistState extends State<SettingsBacklist> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                '西瓜',
+                                'Watermelon',
                                 style: TextStyle(
                                   fontSize: WcaoTheme.fsL,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
                               Text(
-                                '人生在世，及时行乐',
+                                'Live your life and enjoy yourself in time',
                                 style: TextStyle(
                                   color: WcaoTheme.secondary,
                                 ),
@@ -74,7 +74,7 @@ class _SettingsBacklistState extends State<SettingsBacklist> {
                               borderRadius: BorderRadius.circular(32),
                             ),
                             child: const Text(
-                              '移除',
+                              'Remove',
                               style: TextStyle(color: Colors.white),
                             ),
                           )

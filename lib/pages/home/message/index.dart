@@ -35,7 +35,7 @@ class _PageViewMessageState extends State<PageViewMessage> {
           children: [
             AppBar(
               automaticallyImplyLeading: false,
-              title: const Text('聊天'),
+              title: const Text('Chat'),
               actions: [
                 PopupMenuButton(
                   padding: EdgeInsets.zero,
@@ -68,7 +68,7 @@ class _PageViewMessageState extends State<PageViewMessage> {
                           const Icon(Icons.crop_free),
                           Container(
                             margin: const EdgeInsets.only(left: 8),
-                            child: const Text('扫一扫'),
+                            child: const Text('Scan'),
                           ),
                         ],
                       ),
@@ -82,7 +82,7 @@ class _PageViewMessageState extends State<PageViewMessage> {
                           const Icon(Icons.how_to_reg),
                           Container(
                             margin: const EdgeInsets.only(left: 8),
-                            child: const Text('添加好友'),
+                            child: const Text('Add friends'),
                           ),
                         ],
                       ),
@@ -214,7 +214,7 @@ class _PageViewMessageState extends State<PageViewMessage> {
           autocorrect: false,
           style: TextStyle(fontSize: WcaoTheme.fsBase),
           decoration: const InputDecoration(
-            hintText: "请输入搜索关键词",
+            hintText: "Search",
             contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 16),
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide.none,

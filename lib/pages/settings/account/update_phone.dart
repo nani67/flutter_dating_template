@@ -24,7 +24,7 @@ class _AccountUpdatePhoneState extends State<AccountUpdatePhone> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '更换手机号',
+                'Change mobile number',
                 style: TextStyle(
                   fontSize: WcaoTheme.fsBase * 2,
                   fontWeight: FontWeight.bold,
@@ -33,7 +33,7 @@ class _AccountUpdatePhoneState extends State<AccountUpdatePhone> {
               Container(
                 margin: const EdgeInsets.only(top: 12),
                 child: Text(
-                  '更换新手机号后，请重新登录APP',
+                  'After changing to a new mobile phone number, please log in to the APP again',
                   style: TextStyle(color: WcaoTheme.secondary),
                 ),
               ),
@@ -45,7 +45,7 @@ class _AccountUpdatePhoneState extends State<AccountUpdatePhone> {
                   maxLength: 11,
                   decoration: InputDecoration(
                     counterText: "",
-                    hintText: "请输入手机号码",
+                    hintText: "Please enter a mobile number",
                     contentPadding:
                         const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
                     enabledBorder: OutlineInputBorder(
@@ -79,7 +79,7 @@ class _AccountUpdatePhoneState extends State<AccountUpdatePhone> {
                     borderRadius: WcaoTheme.radius,
                   ),
                   child: const Text(
-                    '更换',
+                    'Replace',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w500,

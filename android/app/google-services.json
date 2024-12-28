@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "776594924091",
+    "project_id": "dating-test-128fe",
+    "storage_bucket": "dating-test-128fe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776594924091:android:7f3721c84d20d3ef9d721e",
+        "android_client_info": {
+          "package_name": "com.example.flutter_dating_template"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1B-zmaskwbeQBjs1oaLWnVaQjmoo7dZQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

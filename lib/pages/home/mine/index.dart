@@ -103,17 +103,17 @@ class _PageViewMineState extends State<PageViewMine> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   InkWell(
-                    child: adapterItem(mine.visits, '访客'),
+                    child: adapterItem(mine.visits, 'Visitor'),
                     onTap: () => Get.toNamed('/mine/visitors'),
                   ),
                   adapterDrive(),
                   InkWell(
-                    child: adapterItem(mine.friends, '好友'),
+                    child: adapterItem(mine.friends, 'Friends'),
                     onTap: () => Get.toNamed('/mine/firends'),
                   ),
                   adapterDrive(),
                   InkWell(
-                    child: adapterItem(mine.fans, '粉丝'),
+                    child: adapterItem(mine.fans, 'Fan'),
                     onTap: () => Get.toNamed('/mine/fans'),
                   )
                 ],
@@ -284,7 +284,7 @@ class _PageViewMineState extends State<PageViewMine> {
           Container(
             margin: const EdgeInsets.only(top: 12),
             child: Text(
-              '${mine.createDay}天 ${mine.tags.length}动态',
+              '${mine.createDay} Sky ${mine.tags.length} dynamic',
               style: TextStyle(
                 color: WcaoTheme.placeholder,
               ),

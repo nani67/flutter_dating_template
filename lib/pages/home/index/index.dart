@@ -37,7 +37,7 @@ class _PageViewIndexState extends State<PageViewIndex> {
                 children: [
                   Center(
                     child: Text(
-                      '匹配历史',
+                      'Match history',
                       style: TextStyle(
                         color: WcaoTheme.base,
                         fontSize: WcaoTheme.fsBase,
@@ -120,7 +120,7 @@ class _PageViewIndexState extends State<PageViewIndex> {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          '圆子',
+                                          'Mariko',
                                           style: TextStyle(
                                             fontSize: 28,
                                             fontWeight: FontWeight.bold,
@@ -161,12 +161,12 @@ class _PageViewIndexState extends State<PageViewIndex> {
                                             Container(
                                               margin: const EdgeInsets.only(
                                                   right: 8),
-                                              child: tag('射手座'),
+                                              child: tag('Sagittarius'),
                                             ),
                                             Container(
                                               margin: const EdgeInsets.only(
                                                   right: 8),
-                                              child: tag('21岁'),
+                                              child: tag('21 years old'),
                                             ),
                                           ],
                                         )
@@ -215,7 +215,7 @@ class _PageViewIndexState extends State<PageViewIndex> {
       },
       child: Row(children: [
         Text(
-          '匹配条件',
+          'Match condition',
           style: TextStyle(fontSize: WcaoTheme.fsBase),
         ),
         Container(

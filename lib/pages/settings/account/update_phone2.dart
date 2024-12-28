@@ -25,7 +25,7 @@ class _AccountUpdatePhone2State extends State<AccountUpdatePhone2> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '更换手机号',
+                'Change mobile number',
                 style: TextStyle(
                   fontSize: WcaoTheme.fsBase * 2,
                   fontWeight: FontWeight.bold,
@@ -34,7 +34,7 @@ class _AccountUpdatePhone2State extends State<AccountUpdatePhone2> {
               Container(
                 margin: const EdgeInsets.only(top: 12),
                 child: Text(
-                  '请填写重新绑定的手机号',
+                  'Please fill in mobile number',
                   style: TextStyle(color: WcaoTheme.secondary),
                 ),
               ),
@@ -46,7 +46,7 @@ class _AccountUpdatePhone2State extends State<AccountUpdatePhone2> {
                   maxLength: 11,
                   decoration: InputDecoration(
                     counterText: "",
-                    hintText: "请输入手机号码",
+                    hintText: "Please enter mobile number",
                     contentPadding:
                         const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
                     enabledBorder: OutlineInputBorder(
@@ -68,7 +68,7 @@ class _AccountUpdatePhone2State extends State<AccountUpdatePhone2> {
               ),
               InkWell(
                 onTap: () async {
-                  await WcaoUtils.toast('更换成功');
+                  await WcaoUtils.toast('Replacement successful');
                   Get.toNamed('/login/verify-code');
                 },
                 child: Container(
@@ -81,7 +81,7 @@ class _AccountUpdatePhone2State extends State<AccountUpdatePhone2> {
                     borderRadius: WcaoTheme.radius,
                   ),
                   child: const Text(
-                    '更换',
+                    'Replace',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w500,

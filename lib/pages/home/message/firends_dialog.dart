@@ -33,7 +33,7 @@ class _FirendsDialogState extends State<FirendsDialog> {
                       margin: const EdgeInsets.only(top: 24),
                       alignment: Alignment.center,
                       child: Text(
-                        '西瓜',
+                        'Watermelon',
                         style: TextStyle(
                           fontSize: WcaoTheme.fsXl,
                           fontWeight: FontWeight.bold,
@@ -53,13 +53,13 @@ class _FirendsDialogState extends State<FirendsDialog> {
                             color: Colors.black12,
                           ),
                         ),
-                        child: const Text('二维码'),
+                        child: const Text('QR Code'),
                       ),
                     ),
                     Container(
                       alignment: Alignment.center,
                       child: Text(
-                        '扫码二维码，来爱交友找我玩吧!',
+                        'Scan the QR code and come to Dating to play with me!',
                         style: TextStyle(color: WcaoTheme.secondary),
                       ),
                     ),
@@ -85,7 +85,7 @@ class _FirendsDialogState extends State<FirendsDialog> {
             child: Column(
               children: [
                 Text(
-                  '分享',
+                  'Share',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: WcaoTheme.fsL,
@@ -97,11 +97,11 @@ class _FirendsDialogState extends State<FirendsDialog> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      shareButton('保存图片', Icons.download, Colors.red),
-                      shareButton('微信好友', Icons.wechat, Colors.green),
-                      shareButton('朋友圈', Icons.person, Colors.orange),
+                      shareButton('Save Image', Icons.download, Colors.red),
+                      // shareButton('WeChat', Icons.wechat, Colors.green),
+                      shareButton('Moments', Icons.person, Colors.orange),
                       shareButton(
-                          '朋友圈', Icons.wb_twilight_rounded, Colors.teal),
+                          'Moments', Icons.wb_twilight_rounded, Colors.teal),
                     ],
                   ),
                 )
